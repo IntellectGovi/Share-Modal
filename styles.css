@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Rajdhani:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Exo 2', cursive;
+}
+
+body,
+html {
+    background-color: black;
+}
+
+/* BACKGROUND-CIRCLE-STARTS */
+.circle-1 {
+    position: absolute;
+    top: 3rem;
+    left: 30rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circle1move 15s infinite;
+}
+
+@keyframes circle1move {
+    50% {
+        left: 33%;
+        top: 4%;
+        scale: 1.1;
+    }
+}
+
+
+
+.circle-2 {
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 30rem;
+    right: 30rem;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    box-shadow: 0 0 50px #5648d8;
+    animation: circle2move 7s infinite;
+}
+
+@keyframes circle2move {
+    50% {
+        bottom: 8%;
+        right: 34%;
+    }
+}
+
+/* BACKGROUND-CIRCLE-ENDS */
+
+/* CARDS-START */
+
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid rgba(216, 214, 214, 0.5);
+}
+
+#wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    backdrop-filter: blur(14px);
+    background-color: #ffffff1a;
+    margin-top: 9em;
+    border-radius: 12px;
+    color: white;
+    border: 2px solid rgba(216, 214, 214, 0.5);
+}
+
+
+.main {
+    position: relative;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 25px;
+    opacity: 0.7;
+}
+
+.Hero-btn {
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-weight: 500;
+    color: white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    cursor: pointer;
+    background: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: 0.2s linear;
+}
+
+button:hover {
+    background-color: rgba(231, 223, 223, 0.932);
+    color: black;
+}
+
+i {
+    margin-right: 4px;
+}
+
+/* CARDS-END */
+
+/* MODAL-STARTS */
+
+.modal{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    scale: 0;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.modal-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-Heading {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.xmark {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.hr {
+    height: 2px;
+    margin-top: 1em;
+    background-color: white;
+}
+
+.logos {
+    margin-top: 0.8em;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+.modalLogo {
+    object-fit: contain;
+}
+
+
+
+.twit {
+    border-radius: 50%;
+    padding: 18px;
+    border: 2px solid rgb(36, 133, 203);
+    color: rgb(36, 133, 203);
+}
+
+.twit:hover {
+    background-color: rgb(36, 133, 203);
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.insta {
+    border-radius: 50%;
+    padding: 18px;
+    border: 2px solid rgb(215, 33, 179);
+    color: rgb(215, 33, 179);
+}
+
+.insta:hover {
+    background-color: rgb(215, 33, 179);
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.fb {
+    border-radius: 50%;
+    padding: 18px;
+    border: 2px solid rgb(13, 90, 222);
+    color: rgb(13, 90, 222);
+}
+
+.fb:hover {
+    background-color: rgb(13, 90, 222);
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.whatsup {
+    border-radius: 50%;
+    padding: 18px;
+    border: 2px solid rgb(55, 237, 55);
+    color: rgb(55, 237, 55);
+}
+
+.whatsup:hover {
+    background-color: rgb(55, 237, 55);
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.active {
+    scale: 1;
+}
+
+/* MODAL-ENDS */
+
+
+/* OVERLAY-STARTS */
+.overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+/* OVERLAY-ENDS */

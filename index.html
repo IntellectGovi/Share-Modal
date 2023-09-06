@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govind | Share-Modal</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+    <!-- CIRCLES -->
+
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+
+    <!-- Main-Section -->
+
+    <div id="wrapper">
+        <div class="main">
+            <!-- user-Image -->
+            <img src="assets/profile.jpg" alt="" class="profile-img">
+
+            <!-- Main-Heading -->
+            <h1>Govind Upadhyay</h1>
+
+            <!-- Sub-Heading -->
+            <h3>Front-End Developer</h3>
+
+            <div class="Hero-btn">
+                <button onclick="openModal()"><i class="fa-solid fa-share" ></i>Share my profile</button>
+                <button><i class="fa-solid fa-heart"></i>Follow Me</button>
+            </div>
+        </div>     
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal">
+
+        <!-- Modal-Heading -->
+
+        <div class="modal-top">
+            <h1 class="modal-Heading">Share My profile</h1>
+            <i class="fa-solid fa-xmark xmark" onclick="closeModal()"></i>
+        </div>
+
+        <div class="hr"></div>
+
+        <!-- Modal-subheading -->
+
+        <h3>Share this via</h3>
+
+        <!-- logos -->
+
+        <div class="logos">
+            <a href="">
+                <i class="fa-brands fa-x-twitter twit modalLogo"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram insta modalLogo"></i>
+            </a>           
+            <a href="">
+                <i class="fa-brands fa-facebook-f fb modalLogo"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-whatsapp whatsup modalLogo"></i>
+            </a>     
+        </div>
+    </div>
+    <!-- end of modal box-->
+
+    
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+
+
+    <!-- linking font Awesome -->
+    <script src="https://kit.fontawesome.com/bc41c70b87.js" crossorigin="anonymous"></script>
+    <!-- linking js -->
+    <script src="index.js"></script>
+</body>
+</html>
